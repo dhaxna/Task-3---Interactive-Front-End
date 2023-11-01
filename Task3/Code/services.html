@@ -1,0 +1,91 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+<style>
+#home-link {
+    color: #ffffff; /* Change the color to your desired color */
+}
+
+#about-link{
+    color: #ffffff; /* Change the color to your desired color */
+}
+
+#contact-link {
+    color: #ffffff; /* Change the color to your desired color */
+}
+body {
+    background-color:#69192e;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Set the text color to be visible on the background image */
+}
+        /* Center-align the paragraph */
+        p {
+             width: 50%;
+            margin: -30 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li><a href="about.html" id="about-link"-link">About</a></li>
+            <li><a href="contact.html" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Services We Offer</h2>
+        <ul>
+            <li>Service 1: Birth Chart Readings.</li>
+            <li>Service 2: Astrological consultation and guidance.</li>
+            <li>Service 3: Daily Horoscope</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Paid Services</h2>
+        <p>To avail these services fill out the below form and the required service with a description for further one on one conversation.</p>
+<form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2023 Your Company Name. All rights reserved.
+    </footer>
+<script>
+        // Handle form submission and show the thank you message
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            
+            // Hide the form
+            document.getElementById("contact-form").style.display = "none";
+            
+            // Show the thank you message
+            document.getElementById("thank-you-message").style.display = "block";
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+
+<style>
+        body {
+             background-color:#251566;
+         
+            background-size: cover; /* Scale the background image to cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-attachment: fixed; /* Fixed background, doesn't scroll with content */
+        }
+.container {
+            color: #ffffff; /* You can specify a color value like #333 for dark gray */
+        }
+    </style>
+<style>
+    /* Keyframes for the wave animation */
+    @keyframes wave {
+        0%, 100% { transform: rotate(0); }
+        25% { transform: rotate(45deg); }
+        50% { transform: rotate(0); }
+        75% { transform: rotate(-45deg); }
+    }
+
+    /* Styling for the wave animation */
+    .wave {
+        display: inline-block;
+        font-size: 24px;
+    }
+#thank-you-message {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    #thank-you-message h2 {
+        color: #fda011; 
+    }
+    .hand {
+        display: inline-block;
+        transform-origin: 70% 70%;
+        animation: wave 2s infinite;
+        animation-timing-function: linear;
+    }
+
+    .hand:nth-child(2) {
+        animation-delay: -1s;
+    }
+
+    .hand:nth-child(3) {
+        animation-delay: -0.5s;
+    }
+</style>
+
+
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Starry Universe Secrets</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+<div class="container mt-4">
+        <h1>Explore the World of Astrology</h1>
+<h4> The starry vault of heaven is in truth the open book of cosmic projection…” — Carl Jung </h4>
+<h3></h3>
+
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://www.thoughtco.com/thmb/1OFBbgbI8ws3X-KZPqi6Vlb_4Vs=/2120x1415/filters:fill(auto,1)/GettyImages-539641141-57c363685f9b5855e5b9ecf4.jpg" alt="Sample Image" class="img-fluid" width="300"    height="450">
+            </div>
+            <div class="col-md-6">
+               <p>                                                                                        
+
+Astrology is a belief system and a complex field of study that suggests a connection between the positions and movements of celestial bodies (such as planets and stars) and events, personalities, and human life on Earth. It has been a subject of fascination and study for thousands of years and has various branches and interpretations, including Western astrology, Vedic astrology, and Chinese astrology, among others.</p>
+
+
+
+
+        
+            </div>
+        </div>
+<a href="learn-more.html" class="btn btn-primary">Learn More</a>
+<form id="birthday-form">
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="date" id="birthdate" required>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+<div id="results" class="mt-4"></div>
+<div class="container mt-3">
+        <h3>Know more about your zodiac sign and traits</h3>
+        <p>Choose your zodiac sign from the list:</p>
+
+        <form id="zodiac-form">
+            <div class="form-group">
+                <label for="zodiac-sign">Select your zodiac sign:</label>
+                <select class="form-control" id="zodiac-sign">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+     <div id="traits" class="mt-4"></div>
+
+        
+    </div>
+<h2>Planets and Their Characteristics</h2>
+<p>Planets play a vital role in astrology. Here are some key characteristics of the major planets:</p>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card mb-4 bg-success">
+            <div class="card-body">
+                <h5 class="card-title">Sun</h5>
+                <ul>
+                    <li>The Sun represents your core self, ego, and identity.</li>
+                    <li>It signifies your vitality, creativity, and the desire for recognition.</li>
+                    <li>Leos are ruled by the Sun, and it's associated with warmth and energy.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Moon</h5>
+                <ul>
+                    <li>The Moon represents your emotions, instincts, and inner self.</li>
+                    <li>It influences your moods, intuition, and how you react to situations.</li>
+                    <li>Cancers are ruled by the Moon, and it's associated with nurturing and receptivity.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-secondary">
+            <div class="card-body">
+                <h5 class="card-title">Mercury</h5>
+                <ul>
+                    <li>Mercury governs communication, thinking, and intellectual abilities.</li>
+                    <li>It affects how you express yourself, process information, and make decisions.</li>
+                    <li>Geminis and Virgos are ruled by Mercury, known for their sharp minds and communication skills.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-danger">
+            <div class="card-body">
+                <h5 class="card-title">Venus</h5>
+                <ul>
+                    <li>Venus is the planet of love, beauty, and harmony.</li>
+                    <li>It influences your relationships, sense of aesthetics, and what you find attractive.</li>
+                    <li>Taurus and Libra are ruled by Venus, representing sensuality and charm.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card mb-4 bg-info"> <!-- Change the background color class (e.g., bg-info) -->
+            <div class="card-body">
+                <h5 class="card-title">Mars</h5>
+                <ul>
+                    <li>Mars is the planet of action, energy, and desire.</li>
+                    <li>It drives your passion, determination, and how you assert yourself.</li>
+                    <li>Aries is ruled by Mars, and it's associated with competitiveness and boldness.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-danger"> <!-- Change the background color class (e.g., bg-warning) -->
+            <div class="card-body">
+                <h5 class="card-title">Jupiter</h5>
+                <ul>
+                    <li>Jupiter is the planet of expansion, growth, and good fortune.</li>
+                    <li>It influences your beliefs, abundance, and opportunities for personal development.</li>
+                    <li>Sagittarius is ruled by Jupiter, representing optimism and exploration.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-warning"> <!-- Change the background color class (e.g., bg-secondary) -->
+            <div class="card-body">
+                <h5 class="card-title">Saturn</h5>
+                <ul>
+                    <li>Saturn represents responsibility, discipline, and limitations.</li>
+                    <li>It reflects your ability to overcome challenges and achieve long-term goals.</li>
+                    <li>Capricorn is ruled by Saturn, associated with ambition and structure.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-success"> 
+            <div class="card-body">
+                <h5 class="card-title">Uranus</h5>
+                <ul>
+                    <li>Uranus is the planet of innovation, individuality, and rebellion.</li>
+                    <li>It signifies sudden changes, originality, and the breaking of old patterns.</li>
+                    <li>Aquarius is ruled by Uranus, known for its eccentricity and forward-thinking nature.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card mb-4 bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Neptune</h5>
+                <ul>
+                    <li>Neptune represents dreams, intuition, and spiritual awakening.</li>
+                    <li>It influences your creativity, imagination, and connection to the mystical.</li>
+                    <li>Pisces is ruled by Neptune, associated with compassion and idealism.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mb-4 bg-dark"> <!-- Change the background color class (e.g., bg-dark) -->
+            <div class="card-body">
+                <h5 class="card-title">Pluto</h5>
+                <ul>
+                    <li>Pluto is the planet of transformation, power, and rebirth.</li>
+                    <li>It signifies profound changes, inner strength, and the process of letting go.</li>
+                    <li>Scorpio is ruled by Pluto, representing intensity and resilience.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<div id="thank-you-message" class="text-center mt-4">
+    <h2 class="animate__animated animate__fadeInUp">Thank You for Visiting!</h2>
+    <i class="far fa-hand-paper animate__animated animate__wobble animate__infinite"></i>
+</div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-light">
+        <p>&copy; 2023 Starry Universe Secrets</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script>
+        document.getElementById("birthday-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const birthdate = new Date(document.getElementById("birthdate").value);
+
+            const month = birthdate.getMonth() + 1; // Months are 0-based, so add 1
+            const day = birthdate.getDate();
+
+            // Determine the zodiac sign
+            let zodiacSign = "";
+
+            if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+                zodiacSign = "Aries";
+            } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+                zodiacSign = "Taurus";
+            } else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+                zodiacSign = "Gemini";
+            } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+                zodiacSign = "Cancer";
+            } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+                zodiacSign = "Leo";
+            } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+                zodiacSign = "Virgo";
+            } else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+                zodiacSign = "Libra";
+            } else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+                zodiacSign = "Scorpio";
+            } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+                zodiacSign = "Sagittarius";
+            } else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+                zodiacSign = "Capricorn";
+            } else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+                zodiacSign = "Aquarius";
+            } else {
+                zodiacSign = "Pisces";
+            }
+
+            // Display the zodiac sign
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = `Your zodiac sign is ${zodiacSign}.`;
+            resultsDiv.style.display = "block"; // Show the results div
+        });
+    </script>
+<script>
+        // Object to store traits for each zodiac sign
+        const zodiacTraits = {
+            Aries: "Energetic, adventurous, and confident.",
+            Taurus: "Reliable, patient, and determined.",
+            Gemini: "Adaptable, curious, and witty.",
+            Cancer: "Nurturing, empathetic, and protective.",
+            Leo: "Generous, cheerful, and charismatic.",
+            Virgo: "Practical, analytical, and kind.",
+            Libra: "Social, fair, and charming.",
+            Scorpio: "Passionate, determined, and assertive.",
+            Sagittarius: "Optimistic, adventurous, and independent.",
+            Capricorn: "Responsible, disciplined, and patient.",
+            Aquarius: "Innovative, open-minded, and friendly.",
+            Pisces: "Compassionate, artistic, and gentle."
+        };
+
+        document.getElementById("zodiac-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const selectedZodiac = document.getElementById("zodiac-sign").value;
+
+            // Display the traits for the selected zodiac sign
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = `<h2>${selectedZodiac}</h2>           <p>${zodiacTraits[selectedZodiac]}</p>`;
+            traitsDiv.style.display = "block"; // Show the results div
+        });
+    </script>
+
+
+</body>
+</html>
